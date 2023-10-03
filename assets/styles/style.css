@@ -1,11 +1,12 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Gilroy', sans-serif;
 }
 
 h1 {
     margin: 0;
 }
+
 
 header {
     display: flex;
@@ -119,7 +120,12 @@ svg {
 }
 
 .card {
-    border: 2px solid #000;
+    border: none;
+    background: #FFF;
+}
+
+.card:hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
 .card-items {
@@ -146,11 +152,13 @@ svg {
 }
 
 .card-text {
+    font-family: 'Gilroy', sans-serif;
     margin: 0;
     width: 310px;
     color: #666;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
     line-height: 150%;
 }
 
@@ -167,9 +175,103 @@ svg {
 }
 
 .text-button {
+    font-family: 'Gilroy';
+    font-weight: bold;
     margin: 0;
     padding: 0;
     color: #000;
     font-size: 12px;
+    font-weight: normal;
+}
+
+/* Начало 5 ДЗ */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10); */
+}
+
+.services_item:hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.services_title-text {
+    margin-bottom: 19px;
+    font-size: 45px;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 0;
+}
+
+.services_title-desc {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    justify-self: center;
+    width: 682px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 54px;
+    margin-top: 19px;
+}
+
+.services_image {
+    padding: 10px;
+    width: 370px;
+    height: 270px;
+}
+
+.services_title {
+    color: #000;
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 22px; 
+    margin-top: 10px;
+}
+
+.services_desc {
+    width: 310px;
+    height: 63px;
+    color: #AAA;
+    text-align: center;
+    font-size: 15px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 39px;
+}
+
+.services_button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: #F25822;
+    color: #FFF;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    margin-bottom: 50px;
+}
+
+.services_button-text {
+    font-family: 'Gilroy';
+    font-size: 13px;
     font-weight: 600;
 }
